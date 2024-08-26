@@ -1,0 +1,23 @@
+{
+  "name": "blogpost",
+  "version": "1.0.0",
+  "description": "My Blog Post Website Version 1.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx concurrently \"npx tailwindcss -i ./src/input.css -o ./views/partials/output.css --watch\" \"nodemon server.js\""
+  },
+  "author": "Umar Hussain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.5.4",
+    "nodemon": "^3.1.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  }
+}

@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+<main>
+  <div class="heading">
+    <h1 class="text-3xl text-blue-700 m-5"><%= page %></h1>
+  </div>
+  <div class="para">
+    <p class="ml-8"><%= paragraph %></p>
+  </div>
+</main>
+
+<% blogd.forEach(function(ele,ind){ %>
+
+<section class="flex flex-col gap-3 m-5 bg-slate-300 rounded p-6">
+  <div class="title">
+    <h1 class="font-bold italic">Posts:</h1>
+    <h1 class="ml-6 font-mono text-red-400"><%= blogd[ind].title %></h1>
+  </div>
+  <div class="post">
+    <p class="font-bold italic">Content:</p>
+    <p class="ml-6 font-mono text-blue-700"><%= blogd[ind].content.substring(0,50) + "..."  %> <a class="text-sm underline text-orange-500" href="/post/<%= blogd[ind].title %>">Read more</a></p>
+    
+  </div>
+</section>
+
+
+<%})%> 
+
+<%- include("partials/footer"); -%>

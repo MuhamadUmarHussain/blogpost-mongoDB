@@ -1,0 +1,21 @@
+<%- include("partials/header")  %>
+
+<main>
+  <div class="heading">
+    <h1 class="text-3xl text-blue-700 m-5"><%= page %></h1>
+  </div>
+  <div class="form flex justify-center items-center">
+
+    <form action="/compose" method="post" class="flex flex-col w-[80%] gap-3">
+        <label for="bt" class="font-bold">Title</label>
+        <input type="text" name="blogTitle" id="bt" class=" border-2 border-gray-600 rounded">
+        <label for="bp" class="font-bold">Post</label>
+        <textarea name="blogPost" id="bp" class="border-2 border-gray-600 rounded" rows="5" cols="100"></textarea>
+        <button type="submit" name="submit" class="bg-blue-600 text-white w-fit px-6 py-2 rounded-lg hover:bg-blue-400">Publish</button>
+        
+    </form>
+    
+  </div>
+</main>
+
+<%- include("partials/footer") -%>

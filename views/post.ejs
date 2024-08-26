@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title><%= Title %></title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <div class="flex-grow">
+
+    <header class="bg-gray-300">
+        <div class="container flex justify-between items-center p-6 ">
+            <div class="title">
+                <h1 class=" md:text-lg">UzMVs Blogs</h1>
+            </div>
+
+            <div class="middel md:hidden w-full absolute -translate-x-[68rem] translate-y-[280px] bg-gray-500 p-2 " id="slider">
+              <div class="movingmenu flex flex-col justify-center items-center space-y-5">
+                <a class="" href="/">Home</a>
+                <a class="" href="/contactus">Contact us</a>
+                <a class="" href="/aboutus">About us</a>
+                <a class="" href="/compose">Compose</a>
+
+              </div>
+            </div>
+
+            
+            
+
+            
+            <div class="humburgers cursor-pointer" id="humburger" >
+
+                <div class="container inline-block md:hidden">
+                    <div class="line1 h-0.5 w-5 my-1 bg-black rounded-xl"></div>
+                    <div class="line2 h-0.5 w-5 my-1 bg-black rounded-xl"></div>
+                    <div class="line3 h-0.5 w-5 my-1 bg-black rounded-xl"></div>
+                </div>
+            </div>
+
+
+              <div class=" hidden md:block md:space-x-6">
+                <a class="md:text-lg md:italic md:hover:text-blue-800" href="/">Home</a>
+                <a class="md:text-lg md:italic md:hover:text-blue-800" href="/contactus">Contact us</a>
+                <a class="md:text-lg md:italic md:hover:text-blue-800" href="/aboutus">About us</a>
+                <a class="md:text-lg md:italic md:hover:text-blue-800" href="/compose">Compose</a>
+            </div>
+
+            
+        </div>
+        
+    </header>
+
+<main>
+  <div class="heading">
+    <h1 class="text-3xl text-blue-700 m-5"><%= page %></h1>
+  </div>
+  <div class="para">
+    <p class="ml-8"><%= paragraph %></p>
+  </div>
+</main>
+
+</div>
+<footer>
+    <div class="feet bg-purple-900 w-full">
+        <h1 class="text-center text-blue-700 text-xl font-mono p-3">Made by Umar Hussain</h1>
+    </div>
+</footer>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
